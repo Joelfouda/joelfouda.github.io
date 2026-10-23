@@ -14,17 +14,53 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
+   <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Couleur personnalisée : bleu ciel -->
+    <style>
+      /* Barre latérale (ordinateur) et barre du haut (téléphone) */
+      #header,
+      #titleBar {
+        background: #4aa3df;
+      }
+      #header > header p {
+        color: #e6f4fd;
+      }
+
+      /* Boutons principaux (ex. « Envoyer un email ») */
+      .button.primary,
+      input[type="submit"].primary {
+        background-color: #4aa3df !important;
+      }
+      .button.primary:hover,
+      input[type="submit"].primary:hover {
+        background-color: #63b1e5 !important;
+      }
+      .button.primary:active,
+      input[type="submit"].primary:active {
+        background-color: #3394d6 !important;
+      }
+
+      /* Cercles des icônes de la section « Mes compétences » */
+      .feature-icons li:before {
+        background: #4aa3df;
+      }
+
+      /* Liens au survol dans le contenu */
+      #main a:hover {
+        color: #3394d6 !important;
+      }
+    </style>
+  </head>
   <body class="is-preload">
     <!-- Header -->
     <section id="header">
       <header>
-        <span class="image avatar"
-          ><img src="images/portrait.png" alt=""
-        /></span>
-        <h1 id="logo"><a href="#">VOTRE NOM</a></h1>
+       <span class="image avatar"><img src="images/photo1.jpg" alt="Portrait de Joël A. Fouda" /></span>
+        <h1 id="logo"><a href="#">JOEL A. FOUDA </a></h1>
         <p>
-          Une courte description de vous<br />
-          Continuer la courte description
+          ETUDIANT EN MAITRISE EN ETUDES INTERNATIONALES <br />
+          UNIVERSITE LAVAL
         </p>
       </header>
       <nav id="nav">
@@ -37,29 +73,24 @@
       </nav>
       <footer>
         <ul class="icons">
+          
           <li>
-            <!-- Vous pouvez mettre en hyperlien vos reseaux sociaux en modifiant la valeur de href-->
-            <a href="https://x.com/MLB/" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-facebook-f"
+            <a href="https://www.facebook.com/share/19hnRwDE1B/" class="icon brands fa-facebook-f"
               ><span class="label">Facebook</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-linkedin"
+            <a href="www.linkedin.com/in/jaff" class="icon brands fa-linkedin"
               ><span class="label">LinkedIn</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-github"
+            <a href="htts://github.com/joelfouda" class="icon brands fa-github"
               ><span class="label">Github</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon solid fa-envelope"
+            <a href="joledaf@gmail.com" class="icon solid fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>
@@ -73,21 +104,17 @@
       <div id="main">
         <!-- One -->
         <section id="one">
-          <div class="image main" data-position="center">
-            <img src="images/bg.jpeg" alt="" />
-          </div>
+  <div class="image main" data-position="center">
+    <img src="images/photo2.jpg" alt="" />
+  </div>
           <div class="container">
             <header class="major">
-              <h2>VOTRE NOM</h2>
-              <p>Le sous-titre de votre site.</p>
+              <h2>JOEL A. FOUDA</h2>
+              <p>Profil académique.</p>
             </header>
             <p>
-              Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus
-              col. Commodo id in arcu ante lorem ipsum sed accumsan erat
-              praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo.
-              Vis aliquet tortor ultricies non ante erat nunc integer eu ante
-              ornare amet commetus vestibulum blandit integer in curae ac
-              faucibus integer non. Adipiscing cubilia elementum.
+            Mon parcours associe les études internationales, les relations internationales et la psychologie sociale du travail et des organisations. Je m’intéresse particulièrement à l’économie politique internationale, au développement international et aux transformations des chaînes d’approvisionnement agroalimentaires
+.
             </p>
           </div>
         </section>
@@ -95,25 +122,29 @@
         <!-- Two -->
         <section id="two">
           <div class="container">
-            <h3>Mes réalisations</h3>
+            <h3>Mes compétences</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer lorem ipsum dolor sit amet.
+              Au fil de mon parcours universitaire, j’ai développé des compétences méthodologiques et numériques qui me permettent d’aborder des questions de recherche avec rigueur. De la recherche documentaire à l’analyse de données, je continue d’enrichir ces outils pour mener des travaux toujours plus solides et approfondis
             </p>
             <ul class="feature-icons">
               <li class="icon solid fa-code">
-                Ici vous pouvez écrire ce que vous voulez
+                Recherche documentaire et analyse critique de publications scientifiques.
               </li>
               <li class="icon solid fa-cubes">
-                Le class= s'occupe des logos à côté de votre texte
+                Rédaction de synthèses et de notes de lecture.
               </li>
               <li class="icon solid fa-book">
-                Trouvez autant de choses à écrire que vous le voulez
+                Analyse qualitative et initiation au traçage des processus (process tracing).
               </li>
-              <li class="icon solid fa-coffee">Supprimez le reste</li>
-              <li class="icon solid fa-bolt">Lightning bolt</li>
-              <li class="icon solid fa-users">Shadow clone technique</li>
+              <li class="icon solid fa-coffee">
+                Initiation à l’analyse de données avec R et Positron.
+              </li>
+              
+              <li class="icon solid fa-bolt">
+                Utilisation de Word, Excel et PowerPoint pour les travaux universitaires
+              </li>
+              
+                
             </ul>
           </div>
         </section>
@@ -123,23 +154,27 @@
           <div class="container">
             <h3>Mon CV</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
+  Vous trouverez ici mon curriculum vitæ, qui présente ma formation, mes centres
+  d'intérêt académiques et les compétences que je développe au fil de mon parcours.
+  Entre relations internationales et psychologie des organisations, il reflète une
+  démarche pluridisciplinaire tournée vers l'économie politique internationale et
+  le développement.
+</p>
+          <!-- CV : aperçu cliquable qui ouvre le PDF -->
+            <a href="images/cv.pdf" target="_blank" rel="noopener noreferrer">
+              <img
+                src="images/cv.jpeg"
+                alt="CV de Joël A. Fouda"
+                style="width: 100%; border: 1px solid #ddd; margin-bottom: 20px;"
+              />
+            </a>
+
+            <p>
+              <a href="images/cv.pdf" class="button" download>Télécharger mon CV (PDF)</a>
             </p>
+
             <div class="features">
               <article>
-                <a href="#" class="image"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Possibly broke spacetime</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
             </div>
           </div>
         </section>
@@ -149,14 +184,14 @@
           <div class="container">
             <h3>Me joindre</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non.
+              Pour toute question, proposition de collaboration ou simple échange autour
+  de mes travaux, n'hésitez pas à me contacter. Je vous répondrai avec plaisir.
             </p>
             <div class="row gtr-uniform">
               <div class="col-12">
                 <!-- Vous pouvez mettre votre email ici au lieu de your-email@example.com -->
                 <a
-                  href="mailto:your-email@example.com?subject=Sujet&body=Votre message ici."
+                  href="mailto:joledaf@gmail.com?subject=Sujet&body=Votre message ici."
                   class="button primary"
                 >
                   Envoyer un email
